@@ -9,18 +9,18 @@ import { Link } from "react-router-dom";
 export default function Available() {
   return (
     <section className="available section">
-      <div className="available__container container grid justify-items-center gap-12">
+      <div className="available__container container grid justify-items-center gap-12 xs:max-w-sm sm:max-w-md md:max-w-3xl md:grid-cols-2 md:items-center lg:max-w-4xl xl:max-w-5xl">
         <img
           src={AvailableImg}
           alt="available img"
-          className="available__img"
+          className="available__img xl:w-[400px]"
         />
 
-        <div className="available__data text-center">
+        <div className="available__data text-center md:text-left">
           <h1 className="available__title section-title">
             Download our App and join the Contest
           </h1>
-          <p className="available__text section-text pb-8">
+          <p className="available__text section-text pb-8 sm:mx-auto sm:max-w-sm md:mx-0">
             In order to improve our cooking skills, we do need a food
             professional photography.
           </p>
