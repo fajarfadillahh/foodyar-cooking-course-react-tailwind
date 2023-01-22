@@ -9,7 +9,7 @@ import SpecialImg4 from "../../assets/images/special-image-4.png";
 
 export default function Special() {
   return (
-    <section className="special section">
+    <section className="special section transition-all duration-400 dark:bg-gray-900">
       <div className="special__container container grid justify-items-center gap-12">
         <div className="special__data text-center xs:max-w-sm">
           <p className="special__text section-text pb-2">Watch Now</p>
@@ -31,10 +31,10 @@ export default function Special() {
             />
 
             <div className="special__card-data text-center">
-              <h3 className="special__card-title pb-1 font-bold text-gray-900">
+              <h3 className="special__card-title pb-1 font-bold text-gray-900 dark:text-white">
                 Salad Kiwi Sugga
               </h3>
-              <p className="special__card-chef pb-3 text-[14px] text-gray-600">
+              <p className="special__card-chef pb-3 text-[14px] text-gray-600 dark:text-white">
                 Amir Sumantha
               </p>
               <ul className="special__card-list flex items-center justify-center gap-1 text-[1rem] text-yellow-400">
@@ -55,10 +55,10 @@ export default function Special() {
             />
 
             <div className="special__card-data text-center">
-              <h3 className="special__card-title pb-1 font-bold text-gray-900">
+              <h3 className="special__card-title pb-1 font-bold text-gray-900 dark:text-white">
                 Avocado Muscle
               </h3>
-              <p className="special__card-chef pb-3 text-[14px] text-gray-600">
+              <p className="special__card-chef pb-3 text-[14px] text-gray-600 dark:text-white">
                 Jhon Lemansk
               </p>
               <ul className="special__card-list flex items-center justify-center gap-1 text-[1rem] text-yellow-400">
@@ -79,10 +79,10 @@ export default function Special() {
             />
 
             <div className="special__card-data text-center">
-              <h3 className="special__card-title pb-1 font-bold text-gray-900">
+              <h3 className="special__card-title pb-1 font-bold text-gray-900 dark:text-white">
                 Bayam Red
               </h3>
-              <p className="special__card-chef pb-3 text-[14px] text-gray-600">
+              <p className="special__card-chef pb-3 text-[14px] text-gray-600 dark:text-white">
                 Ahmad Al Ghifari
               </p>
               <ul className="special__card-list flex items-center justify-center gap-1 text-[1rem] text-yellow-400">
@@ -103,10 +103,10 @@ export default function Special() {
             />
 
             <div className="special__card-data text-center">
-              <h3 className="special__card-title pb-1 font-bold text-gray-900">
+              <h3 className="special__card-title pb-1 font-bold text-gray-900 dark:text-white">
                 Javanicca Fruity
               </h3>
-              <p className="special__card-chef pb-3 text-[14px] text-gray-600">
+              <p className="special__card-chef pb-3 text-[14px] text-gray-600 dark:text-white">
                 Imelda Wattson
               </p>
               <ul className="special__card-list flex items-center justify-center gap-1 text-[1rem] text-yellow-400">
