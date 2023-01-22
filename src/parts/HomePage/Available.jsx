@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function Available() {
   return (
-    <section className="available section">
+    <section className="available section transition-all duration-400 dark:bg-gray-900">
       <div className="available__container container grid justify-items-center gap-12 xs:max-w-sm sm:max-w-md md:max-w-3xl md:grid-cols-2 md:items-center lg:max-w-4xl xl:max-w-5xl">
         <img
           src={AvailableImg}
