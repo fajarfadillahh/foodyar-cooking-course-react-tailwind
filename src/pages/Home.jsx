@@ -7,6 +7,7 @@ import Special from "../parts/HomePage/Special";
 import Testimonial from "../parts/HomePage/Testimonial";
 import Statistic from "../parts/HomePage/Statistic";
 import Available from "../parts/HomePage/Available";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Statistic />
         <Available />
       </main>
+      <Footer />
     </>
   );
 }
