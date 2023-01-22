@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
+// import color mode hooks
+import useColorMode from "../hooks/useColorMode";
+
 // import components
 import Button from "./Button";
 
@@ -33,6 +36,9 @@ export default function Header() {
       window.removeEventListener("scroll", addStickyHeader);
     };
   }, [stickyHeader]);
+
+  // dark mode
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <header
@@ -77,14 +83,36 @@ export default function Header() {
             ))}
           </ul>
 
+          {/* header theme toggle [desktop version] */}
+          <div
+            className="header__theme hidden cursor-pointer text-[1.3rem] md:absolute md:top-20 md:right-8 md:inline-flex lg:static"
+            onClick={() =>
+              setColorMode(colorMode === "light" ? "dark" : "light")
+            }
+          >
+            {colorMode === "light" ? "🌙" : "☀️"}
+          </div>
+
           <Button url="/sign-up">My Account</Button>
         </div>
 
-        <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 md:hidden"
-          onClick={setHandleMenu}
-        >
-          {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
+        <div className="header__wrapper inline-flex items-center gap-6 md:hidden">
+          {/* header theme toggle [mobile version] */}
+          <div
+            className="header__theme inline-flex cursor-pointer text-[1.3rem]"
+            onClick={() =>
+              setColorMode(colorMode === "light" ? "dark" : "light")
+            }
+          >
+            {colorMode === "light" ? "🌙" : "☀️"}
+          </div>
+
+          <div
+            className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900"
+            onClick={setHandleMenu}
+          >
+            {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
+          </div>
         </div>
       </div>
     </header>
