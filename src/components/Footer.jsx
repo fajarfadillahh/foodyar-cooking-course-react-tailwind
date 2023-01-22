@@ -7,8 +7,8 @@ import FooterImg from "../assets/images/logo.png";
 export default function Footer() {
   return (
     <footer className="footer pt-32 pb-8">
-      <div className="footer__container container grid gap-20">
-        <div className="footer__group grid gap-10">
+      <div className="footer__container container grid gap-20 xl:max-w-5xl">
+        <div className="footer__group grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:justify-items-center">
           <div className="footer__content">
             <div className="footer__content-logo inline-flex items-center gap-2 pb-3 text-[20px] font-bold text-gray-900">
               <img
