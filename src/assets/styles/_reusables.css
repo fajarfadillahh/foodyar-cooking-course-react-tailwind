@@ -9,9 +9,6 @@
   .section-text {
     @apply leading-6 text-gray-600;
   }
-  .section-bottom {
-    @apply pb-8;
-  }
 
   /* container class */
   .container {
