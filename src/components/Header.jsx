@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
+// import components
+import Button from "./Button";
+
 // import images
 import HeaderLogo from "../assets/images/logo.png";
-import Button from "./Button";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,16 +31,16 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-12 text-center shadow-md transition-all duration-400 ${
+          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-12 text-center shadow-md transition-all duration-400 md:static md:top-0 md:flex md:w-auto md:scale-y-100 md:items-center md:gap-6 md:p-0 md:shadow-none lg:gap-8 ${
             menuOpen ? "scale-y-100" : "scale-y-0"
           }`}
         >
-          <ul className="header__list mb-6 flex flex-col gap-6">
+          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex-row lg:gap-8">
             {[
-              ["About Us", "/about-us"],
-              ["Beverages", "/beverages"],
+              ["About", "/about"],
+              ["Beverage", "/beverage"],
               ["Chef", "/chef"],
-              ["Ingredients", "/ingredients"],
+              ["Ingredient", "/ingredient"],
               ["Stories", "/stories"],
             ].map(([title, url]) => (
               <li key={url}>
@@ -56,7 +58,7 @@ export default function Header() {
         </div>
 
         <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900"
+          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 md:hidden"
           onClick={setHandleMenu}
         >
           {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
