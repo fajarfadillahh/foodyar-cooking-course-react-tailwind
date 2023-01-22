@@ -42,14 +42,14 @@ export default function Header() {
 
   return (
     <header
-      className={`header fixed top-0 left-0 z-30 w-full bg-white transition-all duration-400 ${
+      className={`header fixed top-0 left-0 z-30 w-full bg-white transition-all duration-400 dark:bg-gray-900 ${
         stickyHeader ? "shadow-md" : "shadow-none"
       }`}
     >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
-          className="header__logo inline-flex items-center gap-2 text-[20px] font-bold text-gray-900"
+          className="header__logo inline-flex items-center gap-2 text-[20px] font-bold text-gray-900 dark:text-white"
         >
           <img
             src={HeaderLogo}
@@ -60,7 +60,7 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-12 text-center shadow-md transition-all duration-400 md:static md:top-0 md:flex md:w-auto md:scale-y-100 md:items-center md:gap-6 md:p-0 md:shadow-none lg:gap-8 ${
+          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-12 text-center shadow-md transition-all duration-400 dark:bg-gray-900 md:static md:top-0 md:flex md:w-auto md:scale-y-100 md:items-center md:gap-6 md:p-0 md:shadow-none lg:gap-8 ${
             menuOpen ? "scale-y-100" : "scale-y-0"
           }`}
         >
@@ -75,7 +75,7 @@ export default function Header() {
               <li key={url}>
                 <Link
                   to={url}
-                  className="header__link font-semibold text-gray-900 hover:text-pink-200"
+                  className="header__link font-semibold text-gray-900 hover:text-pink-200 dark:text-white dark:hover:text-pink-200"
                 >
                   {title}
                 </Link>
@@ -108,7 +108,7 @@ export default function Header() {
           </div>
 
           <div
-            className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900"
+            className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 dark:text-white"
             onClick={setHandleMenu}
           >
             {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
