@@ -6,11 +6,11 @@ import FooterImg from "../assets/images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="footer pt-32 pb-8">
+    <footer className="footer pt-32 pb-8 transition-all duration-400 dark:bg-gray-900">
       <div className="footer__container container grid gap-20 xl:max-w-5xl">
         <div className="footer__group grid gap-10 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:justify-items-center">
           <div className="footer__content">
-            <div className="footer__content-logo inline-flex items-center gap-2 pb-3 text-[20px] font-bold text-gray-900">
+            <div className="footer__content-logo inline-flex items-center gap-2 pb-3 text-[20px] font-bold text-gray-900 dark:text-white">
               <img
                 src={FooterImg}
                 alt="footer img"
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900">
+            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900 dark:text-white">
               Special Courses
             </h3>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li key={url}>
                   <Link
                     to={url}
-                    className="footer__content-link text-gray-600 hover:text-pink-200 hover:underline"
+                    className="footer__content-link text-gray-600 hover:text-pink-200 hover:underline dark:text-white dark:hover:text-pink-200"
                   >
                     {title}
                   </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900">
+            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900 dark:text-white">
               Our Company
             </h3>
 
@@ -63,7 +63,7 @@ export default function Footer() {
                 <li key={url}>
                   <Link
                     to={url}
-                    className="footer__content-link text-gray-600 hover:text-pink-200 hover:underline"
+                    className="footer__content-link text-gray-600 hover:text-pink-200 hover:underline dark:text-white dark:hover:text-pink-200"
                   >
                     {title}
                   </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900">
+            <h3 className="footer__content-title pb-5 text-[20px] font-bold text-gray-900 dark:text-white">
               Be Our Friend
             </h3>
 
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="footer__copyraights border-t border-gray-200 pt-8 text-center text-gray-600">
+        <p className="footer__copyraights border-t border-gray-200 pt-8 text-center text-gray-600 dark:border-gray-600 dark:text-white">
           © Copyrights 2023 Foodyar. All rigths reserved | Develop by Fajar
           Fadillah A ❤️
         </p>
