@@ -9,7 +9,7 @@ import HeroImg from "../../assets/images/hero-picture.png";
 
 export default function Hero() {
   return (
-    <section className="hero section xl:pt-48">
+    <section className="hero section transition-all duration-400 dark:bg-gray-900 xl:pt-48">
       <div className="hero__container container grid justify-items-center gap-12 xs:max-w-sm sm:max-w-md md:max-w-3xl md:grid-cols-2 md:items-center lg:max-w-4xl xl:max-w-5xl">
         <div className="hero__overlay relative flex items-center justify-center">
           <img src={HeroImg} alt="hero img" className="hero__overlay-img" />
