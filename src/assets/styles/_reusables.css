@@ -7,7 +7,7 @@
     @apply pb-4 text-[32px] font-bold text-gray-900;
   }
   .section-text {
-    @apply text-[15px] leading-6 text-gray-600;
+    @apply leading-6 text-gray-600;
   }
   .section-bottom {
     @apply pb-8;
