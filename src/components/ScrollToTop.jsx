@@ -28,8 +28,8 @@ export default function ScrollToTop() {
 
   return (
     <div
-      className={`scroll fixed right-6 z-20 inline-flex items-center justify-center rounded-xl bg-pink-200 p-3 text-[1.5rem] text-white transition-all duration-400 hover:bg-pink-300 ${
-        visible ? "bottom-12" : "-bottom-full"
+      className={`scroll fixed right-6 z-20 inline-flex cursor-pointer items-center justify-center rounded-xl bg-pink-200 p-3 text-[1.5rem] text-gray-900 transition-all duration-400 hover:bg-pink-300 xl:right-12 ${
+        visible ? "bottom-12 xl:bottom-16" : "-bottom-full"
       }`}
       onClick={scrollToTop}
     >
