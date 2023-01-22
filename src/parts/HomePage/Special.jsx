@@ -80,7 +80,7 @@ export default function Special() {
 
             <div className="special__card-data text-center">
               <h3 className="special__card-title pb-1 font-bold text-gray-900">
-                Bayam Red Poppeye
+                Bayam Red
               </h3>
               <p className="special__card-chef pb-3 text-[14px] text-gray-600">
                 Ahmad Al Ghifari
