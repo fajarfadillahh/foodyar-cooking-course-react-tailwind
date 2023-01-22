@@ -8,6 +8,7 @@ import Testimonial from "../parts/HomePage/Testimonial";
 import Statistic from "../parts/HomePage/Statistic";
 import Available from "../parts/HomePage/Available";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Available />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
