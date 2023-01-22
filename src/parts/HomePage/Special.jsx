@@ -11,7 +11,7 @@ export default function Special() {
   return (
     <section className="special section">
       <div className="special__container container grid justify-items-center gap-12">
-        <div className="special__data text-center">
+        <div className="special__data text-center xs:max-w-sm">
           <p className="special__text section-text pb-2">Watch Now</p>
           <h1 className="special__title section-title">
             Special for all of you to should Try
@@ -22,7 +22,7 @@ export default function Special() {
           </p>
         </div>
 
-        <div className="special__group grid grid-cols-2 justify-center gap-8">
+        <div className="special__group grid grid-cols-2 justify-center gap-8 xs:max-w-sm sm:max-w-2xl sm:grid-cols-3 lg:max-w-4xl lg:grid-cols-4 xl:max-w-5xl">
           <div className="special__card grid justify-items-center gap-4">
             <img
               src={SpecialImg1}
